@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="main-header">
+    <header>
         <ul>
             <li>
                 <a href="#">ИНФОРМАЦИЯ</a>
@@ -17,17 +18,18 @@
                 <a href="#">ФОТО И ВИДЕО</a>
             </li>
             <div class="logo">
-                <a href="index.html"></a>
-                <img src="img/logo.png" width="138" height="70">
+                <a href="index.html">
+                    <img src="img/logo.png" width="138" height="70">
+                </a>
             </div>
             <li>
                 <a href="#">КАРТА ШТАТА</a>
             </li>
             <li>
-                <a href="#">ГОСТИНИЦЫ</a>
+                <a href="hotels.html">ГОСТИНИЦЫ</a>
             </li>
         </ul>
-    </div>
+    </header>
     <section class="setting">
         <div class="setting-infra">
             <h2>ИНФРАСТРУКТУРА:</h2>
@@ -59,11 +61,16 @@
             <h3>Найдено: 3</h3>
         </div>
         <div class="sorting-value">
-            <p span class="sorting-value-name">СОРТИРОВКА:
-                <p>
-                    <a href="#" span class="sorting-value-name">ПО ЦЕНЕ</a>
-                    <a href="#" span class="sorting-value-name">ПО ТИПУ</a>
-                    <a href="#" span class="sorting-value-name">ПО РЕЙТИНГУ</a>
+            <span class="sorting-value-name">СОРТИРОВКА:
+            </span>
+            <ul>
+                <li><a href="#" span class="sorting-value-name">ПО ЦЕНЕ</a>
+                </li>
+                <li><a href="#" span class="sorting-value-name">ПО ТИПУ</a>
+                </li>
+                <li><a href="#" span class="sorting-value-name">ПО РЕЙТИНГУ</a>
+                </li>
+            </ul>
         </div>
         <div class="sorting-button">
             <button><img src="up.png">
@@ -77,11 +84,11 @@
             <img src="img/amara.jpg" width="135" height="90">
         </div>
         <div class="option-description">
-            <a href="#" class="title">Amara Resort & Spa</a>
-            <p span class="text">Гостиница</p>
-            <p span class="text">ОТ 3500 Р.</p>
-            <input type="submit" value="ПОДРОБНЕЕ">
-            <input type="submit" value="ЗАБРОНИРОВАТЬ">
+            <h1><a href="#" class="title">Amara Resort &amp Spa</a><h1>
+            <span class="text">Гостиница</span>
+            <span span class="text">ОТ 3500 Р.</span>
+            <a href="#"><input type="submit" value="ПОДРОБНЕЕ"></a>
+            <a href="#"><input type="submit" value="ЗАБРОНИРОВАТЬ"></a>
         </div>
         <div class="option-rating">
             <img src="img/hotels-4stars.png">
@@ -94,11 +101,15 @@
             <img src="img/dezert.jpg" width="135" height="90">
         </div>
         <div class="option-description">
-            <a href="#" class="title">Desert Quail Inn</a>
-            <p span class="text">Мотель</p>
-            <p span class="text">ОТ 2000 Р.</p>
-            <input type="submit" value="ПОДРОБНЕЕ">
-            <input type="submit" value="ЗАБРОНИРОВАТЬ">
+            <h1><a href="#" class="title">Desert Quail Inn</a></h1>
+            <span class="text">Мотель</span>
+            <span class="text">ОТ 2000 Р.</span>
+            <a href="#">
+                <input type="submit" value="ПОДРОБНЕЕ">
+            </a>
+            <a href="#">
+                <input type="submit" value="ЗАБРОНИРОВАТЬ">
+            </a>
         </div>
         <div class="option-rating">
             <img src="img/hotels-2stars.png">
@@ -111,11 +122,15 @@
             <img src="img/villas.jpg" width="135" height="90">
         </div>
         <div class="option-description">
-            <a href="#" n class="title">Villas at Poco Diablo</h2>
-            <p span class="text">Апартаменты</p>
-            <p span class="text">ОТ 4000 Р.</p>
-            <input type="submit" value="ПОДРОБНЕЕ">
-            <input type="submit" value="ЗАБРОНИРОВАТЬ">
+            <h1><a href="#" class="title">Villas at Poco Diablo</a></h1>
+            <span class="text">Апартаменты</span>
+            <span class="text">ОТ 4000 Р.</span>
+            <a href="#">
+                <input type="submit" value="ПОДРОБНЕЕ">
+            </a>
+            <a href="#">
+                <input type="submit" value="ЗАБРОНИРОВАТЬ">
+            </a>
         </div>
         <div class="option-rating">
             <img src="img/hotels-3stars.png">
@@ -123,7 +138,7 @@
                 <p>
         </div>
     </article>
-    <section class="footer">
+    <footer>
         <div class="footer-visit">
             <a href="#">#visitSEDONA</a>
         </div>
@@ -139,11 +154,11 @@
             </a>
         </div>
         <div class="footer-logo-html">
-            <a href="https://htmlacademy.ru/" span class="text">WEBSITE by</a>
+            <a href="https://htmlacademy.ru/" span class="text">WEBSITE by
             <img src="img/logo_html.jpg" width="113" height="39">
             </a>
         </div>
-        </section>
+    </footer>
 </body>
 
 </html>
