@@ -29,55 +29,24 @@
         </header>
         <section class="setting">
             <div class="setting-infra">
-                <h2>ИНФРАСТРУКТУРА:</h2>
-                <form class="infra-form" action="https://echo.htmlacademy.ru" method="post">
-                    <label class="subscribe-field">
-                        <input type="checkbox" name="remember" checked>БАССЕЙН
-                        <span class="checkbox-indicator"></span>
-                    </label>
+                <h2>Инфраструктура:</h2>
+                <form action="#" method="get" class="setting-infra-category">
 
-                    <label class="subscribe-field">
-                        <input type="checkbox" name="remember" checked>ПАРКОВКА
-                        <span class="checkbox-indicator"></span>
-                    </label>
+                  <label for="infrastr-1"><input id="infrastr-1" type="checkbox" checked hidden>Бассейн</label>
+                  <label for="infrastr-2"><input id="infrastr-2" type="checkbox" hidden>Парковка</label>
+                  <label for="infrastr-3"><input id="infrastr-3" type="checkbox" hidden>Wi-fi</label>
 
-                    <label class="subscribe-field">
-                        <input type="checkbox" name="remember" checked>Wi-Fi
-                        <span class="checkbox-indicator"></span>
-                    </label>
                 </form>
-            </div>
-            <div class="setting-type">
-                <h2>Тип жилья</h2>
+                </div>
+                <div class="setting-filter">
+                <h2>Тип жилья:</h2>
+                <form action="#" method="get" class="setting-filter-category">
+                  <label for="type-1"><input id="type-1" type="checkbox" checked hidden>ГостиницА</label>
+                  <label for="type-2"><input id="type-2"type="checkbox" hidden>МОТЕЛЬ</label>
+                  <label for="type-3"><input id="type-3"type="checkbox" hidden>АПАРТАМЕНТЫ</label>
+                </form>
+              </div>
 
-                <input type="checkbox" name="remember" checked>
-                <label for="subscribe-field">ГостиницА</label>
-                <span class="checkbox-indicator"></span>
-                <input type="checkbox" name="remember" checked>
-                <label for="subscribe-field">МОТЕЛЬ</label>
-                <span class="checkbox-indicator"></span>
-                <input type="checkbox" name="remember" checked>
-                <label for="subscribe-field">АПАРТАМЕНТЫ</label>
-            </div>
-            <div class="filter-range">
-                <div class="filter-range-title">Стоимость в сутки (р):</div>
-                <div class="price-controls">
-                    <label class="min-price">от
-                        <input type="text" name="min-price" value="0">
-                    </label>
-                    <label class="max-price">до
-                        <input type="text" name="max-price" value="3000">
-                    </label>
-                </div>
-                <div class="range-controls">
-                    <div class="scale">
-                        <div class="bar"></div>
-                    </div>
-                    <div class="range-toggle range-toggle-min"></div>
-                    <div class="range-toggle range-toggle-max"></div>
-                </div>
-                <button class="btn-transparent" type="submit">Показать</button>
-            </div>
         </section>
         <section class="sorting">
             <h3>Найдено: 3</h3>
@@ -158,9 +127,9 @@
                 <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
                 <a class="social-btn social-btn-yt" href="#">ютуб</a>
             </div>
-            <div class="footer-logo-html">
-                <a href="https://htmlacademy.ru/">WEBSITE by
-            </a>
+            <div class="footer-html">
+              <a href="https://htmlacademy.ru/" class="footer-html-logo">WEBSITE by
+                </a>
             </div>
         </footer>
     </div>

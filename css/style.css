@@ -419,6 +419,7 @@ footer {
 .footer-visit {
     width: 400px;
     float: left;
+    display: block;
 }
 .title {
     display: block;
@@ -430,50 +431,105 @@ footer {
     text-transform: uppercase;
     text-decoration: none;
 }
-.footer-social {
-    width: 400px;
-    float: left;
+.footer-social{
+display: block;
+float: left;
+width: 400px;
+text-align: center;
 }
+
 .social-btn {
-    display: inline-block;
-    width: 48px;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin: 0 2px;
+background: #000000;
+margin-top: 33px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;}
+
+  .social-btn-twit{
+    width: 46px;
     height: 48px;
-    margin: 5 5px;
-    font-size: 0;
-    vertical-align: top;
-    text-decoration: none;
-    background: url("img/sprite3.png") no-repeat center;
+    background:url("../img/spritesheet.png");
+    background-position: -153px -2px;
+  }
+.social-btn-twit:hover{
+    background-position: -203px -2px;
+  }
+  .social-btn-twit:active{
+    background-position: -253px -2px;
 }
-.social-btn-twit {
-    background-position: 9px -447px;
+
+  .social-btn-yt{
+    width: 46px;
+    height: 48px;
+    background:url("../img/spritesheet.png");
+    background-position: -471px -2px;
+  }
+  .social-btn-yt:hover{
+      background-position: -521px -2px;
+    }
+    .social-btn-yt:active{
+      background-position: -571px -2px;
+  }
+
+  .social-btn-fb{
+    width: 46px;
+    height: 48px;
+    background:url("../img/spritesheet.png");
+    background-position: -318px -2px;
+  }
+  .social-btn-fb:hover{
+      background-position: -369px -2px;
+    }
+    .social-btn-fb:active{
+      background-position: -420px -2px;
+  }
+
+
+.footer-html{
+  width: 400px;
+  display: block;
+  float: right;
+  text-align: center;
 }
-.social-btn-fb {
-    background-position: 15px -171px;
+
+
+.footer-html-logo{
+  display: inline-block;
+  width: 195px;
+  height: 39px;
+  background:url("../img/spritesheet.png");
+  background-position: -621px -2px;
+  margin-top: 40px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;}
 }
-.social-btn-yb {
-    background-position: 12px -313px;
+
+.footer-html-logo:hover{
+background-position: -820px -2px;
 }
-.footer-logo-html {
-    width: 400px;
-    float: right;
+
+.footer-html-logo:active{
+    background-position: -1019px -2px;
 }
-.footer-logo-html a {
-    font-size: 14px;
-    line-height: 120px;
-    font-weight: normal;
-    color: black;
-    text-align: left;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: block;
-    padding-left: 52px;
-}
+
 .setting {
     width: 1200px;
     height: 217px;
     float: left;
     display: block;
     background: url(../img/hotels_background.jpg) no-repeat;
+}
+.setting-infra{
+  display: block;
+  float: left;
+  width: 200px;
+  padding-left: 72px;
+  margin-right: 38px;
 }
 .setting h2 {
     font-size: 16px;
@@ -482,146 +538,66 @@ footer {
     text-transform: uppercase;
     display: block;
     float: left;
+    margin-top: 28px;
 }
-.setting label {
-    font-size: 14px;
-    font-weight: normal;
-    color: white;
-    text-transform: uppercase;
+.setting label{
+      font-size: 14px;
+      font-weight: normal;
+      color: white;
+      text-transform: uppercase;
+      display: block;
+      position: relative;
+    }
+
+.setting .checkbox{
+position: absolute;
+opacity: 0;
 }
-.setting-infra {
-    display: block;
-    float: left;
-    width: 312px;
+
+
+.setting .checkbox + label{
+cursor: pointer;
+    }
+
+.setting .checkbox + label::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 10;
+  height: 22px;
+  width: 22px;
+background: url("../img/spritesheet_check.png") no-repeat;
+background-position: -2px -2px;
 }
-.infra-form {
-    display: block;
-    float: left;
+.setting .checkbox:checked + label::before {
+content: "";
+position: absolute;
+left: 0;
+top: 50%;
+height: 22px;
+width: 26px;
+background: transparent url("../img/spritesheet_check.png") no-repeat center;
+background-position: -28px -2px;
 }
-.subscribe-field input[type="checkbox"] {
-    display: none;
+
+.setting-infra-category{
+  display: block;
+  float: left;
+  margin-left: -55px;
 }
-.subscribe-field input[type="checkbox"] + .checkbox-indicator {
-    width: 17px;
-    height: 17px;
-    border: 2px solid #000000;
+.setting-filter{
+  display: block;
+  float: left;
+  width: 200px;
 }
-.subscribe-field input[type="checkbox"]:checked + .checkbox-indicator::before,
-.subscribe-field input[type="checkbox"]:checked + .checkbox-indicator::after {
-    content: "";
-    width: 15px;
-    height: 2px;
-    background-color: #000000;
+.setting-filter-category{
+  display: block;
+  float: left;
+  margin-left: -55px;
 }
-.subscribe-field input[type="checkbox"]:checked + .checkbox-indicator::before {
-    transform: rotate(45deg);
-}
-.subscribe-field input[type="checkbox"]:checked + .checkbox-indicator::after {
-    transform: rotate(-45deg);
-}
-.filter-range {
-    width: 330px;
-    display: block;
-    float: right;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-.filter-range-title {
-    margin-bottom: 9px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
-}
-.price-controls {
-    position: relative;
-    height: 36px;
-    margin-bottom: 20px;
-    font-size: 0;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-}
-.price-controls::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 2px;
-    height: 22px;
-    background: #ffffff;
-    transform: translate(-50%, -50%);
-}
-.price-controls label {
-    display: inline-block;
-    font-size: 14px;
-    line-height: 38px;
-    vertical-align: top;
-    cursor: pointer;
-}
-.price-controls .min-price,
-.price-controls .max-price {
-    width: 90px;
-    padding-left: 65px;
-}
-.price-controls input {
-    width: 50px;
-    margin: 0;
-    color: inherit;
-    font: inherit;
-    background: none;
-    border: none;
-    outline: none;
-}
-.range-controls {
-    position: relative;
-    margin-bottom: 32px;
-}
-.range-controls .scale {
-    height: 2px;
-    background: rgba(255, 255, 255, 0.3);
-}
-.range-controls .bar {
-    width: 80%;
-    height: 2px;
-    background: #ffffff;
-}
-.range-toggle {
-    position: absolute;
-    top: -9px;
-    width: 4px;
-    height: 4px;
-    background: #ababab;
-    border: 8px solid #ffffff;
-    border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    cursor: pointer;
-}
-.range-toggle:hover {
-    background: #1c4f80;
-}
-.range-toggle-min {
-    left: 0;
-}
-.range-toggle-max {
-    left: 80%;
-}
-.btn-transparent {
-    display: block;
-    margin: 0 auto;
-    padding: 6px 35px;
-    font-size: 14px;
-    line-height: 20px;
-    color: #ffffff;
-    text-transform: uppercase;
-    background: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    outline: none;
-    cursor: pointer;
-}
-.btn-transparent:hover {
-    color: #000000;
-    background: #ffffff;
-}
+
+
 .sorting {
     display: block;
     float: left;
