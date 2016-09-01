@@ -28,23 +28,42 @@
             </a>
         </header>
         <section class="setting">
-            <div class="setting-infra">
-                <h2>Инфраструктура:</h2>
-                <form action="#" method="get" class="setting-infra-category">
+          <div class="setting-infra">
+          <h2>Тип жилья:</h2>
+          <form action="#" method="get" class="setting-filter-category">
+            <ul>
+              <li><input type="checkbox" id="infrastr-1" name="pool" value="pool" checked><label for="infrastr-1">Бассейн</label></li>
+                  <li><input type="checkbox" id="infrastr-2" name="parking" value="parking" checked><label for="infrastr-2">Парковка</label></li>
+                  <li><input type="checkbox" id="infrastr-3" name="wi-fi" value="wi-fi" checked><label for="infrastr-3">Wi-Fi</label></li>
+          </ul>
+          </form>
 
-                  <label for="infrastr-1"><input id="infrastr-1" type="checkbox" checked hidden>Бассейн</label>
-                  <label for="infrastr-2"><input id="infrastr-2" type="checkbox" hidden>Парковка</label>
-                  <label for="infrastr-3"><input id="infrastr-3" type="checkbox" hidden>Wi-fi</label>
-
-                </form>
-                </div>
+          </div>
                 <div class="setting-filter">
                 <h2>Тип жилья:</h2>
                 <form action="#" method="get" class="setting-filter-category">
-                  <label for="type-1"><input id="type-1" type="checkbox" checked hidden>ГостиницА</label>
-                  <label for="type-2"><input id="type-2"type="checkbox" hidden>МОТЕЛЬ</label>
-                  <label for="type-3"><input id="type-3"type="checkbox" hidden>АПАРТАМЕНТЫ</label>
+                  <ul>
+                    <li><input type="checkbox" id="type-1" name="hotel" value="hotel" checked><label for="type-1">Гостиница</label></li>
+                        <li><input type="checkbox" id="type-2" name="motel" value="motel" checked><label for="type-2">Мотель</label></li>
+                        <li><input type="checkbox" id="type-3" name="apartments" value="apartments" checked><label for="type-3">Апартаменты</label></li>
+                </ul>
                 </form>
+
+              </div>
+              <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
               </div>
 
         </section>
@@ -60,12 +79,10 @@
                 <li><a href="#">ПО РЕЙТИНГУ</a>
                 </li>
             </ul>
-            <div class="sorting-button">
-                <button><img src="up.png">
-                </button>
-                <button><img src="down.png">
-                </button>
-            </div>
+            <div class="sorting-controls">
+  <a class="arrow-ascending" href="#"></a>
+  <a class="arrow-descending down-active" href="#"></a>
+</div>
         </section>
         <article class="option">
             <div class="option-img">
@@ -73,14 +90,17 @@
             </div>
             <div class="option-description">
                 <a href="#" class="place">Amara Resort & Spa</a>
-                <p>Гостиница</p>
-                <p>ОТ 3500 Р.
-                    <p>
+                <div class="option-text">
+                <p class="item-description">Гостиница</p>
+                <p>ОТ 3500 Р.</p>
+              </div>
+              <div class="option-btn">
                         <a href="#" class="info">ПОДРОБНЕЕ</a>
                         <a href="#" class="block">ЗАБРОНИРОВАТЬ</a> </div>
+                        </div>
             <div class="option-rating">
-
-                <span class="rating">Рейтинг: 8,5
+<span class="stars"></span>
+                <span class="rate">Рейтинг: 8,5
             </span>
             </div>
         </article>
@@ -90,14 +110,16 @@
             </div>
             <div class="option-description">
                 <a href="#" class="place">Desert Quail Inn</a>
-                <p>Мотель</p>
-                <p>ОТ 2000 Р.
-                    <p>
+<div class="option-text">
+                <p class="item-description">Мотель</p>
+                <p>ОТ 2000 Р.</p>
+              </div><div class="option-btn">
                         <a href="#" class="info">ПОДРОБНЕЕ</a>
                         <a href="#" class="block">ЗАБРОНИРОВАТЬ</a> </div>
+                        </div>
             <div class="option-rating">
-
-                <span class="rating">Рейтинг: 8,9
+<span class="stars stars-dezert"></span>
+                <span class="rate">Рейтинг: 8,9
             </span>
             </div>
         </article>
@@ -107,14 +129,15 @@
             </div>
             <div class="option-description">
                 <a href="#" class="place">Villas at Poco Diablo</a>
-                <p>Апартаменты</p>
-                <p>ОТ 4000 Р.
-                    <p>
+                <div class="option-text">
+                <p class="item-description">Апартаменты</p>
+                <p>ОТ 4000 Р.</p>
+              </div><div class="option-btn">
                         <a href="#" class="info">ПОДРОБНЕЕ</a>
-                        <a href="#" class="block">ЗАБРОНИРОВАТЬ</a> </div>
+                        <a href="#" class="block">ЗАБРОНИРОВАТЬ</a> </div></div>
             <div class="option-rating">
-
-                <span class="rating">Рейтинг: 9,2
+<span class="stars stars-villas"></span>
+                <span class="rate">Рейтинг: 9,2
             </span>
             </div>
         </article>
