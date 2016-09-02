@@ -5,10 +5,19 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #f2f2f2;
+    box-shadow: 0px 0px 15px -4px rgba(0,1,1,1);
 }
-.shadow {
-  box-shadow: 5px 5px 25px -10px rgba(0,0,0,0.5);
+
+.shadow{
+  display: inline-block;
+    vertical-align: top;
+    min-width: 786px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 15px -5px rgba(0,0,0,.2);
 }
+
 header {
     display: block;
     float: left;
@@ -434,7 +443,7 @@ margin-top: 33px;
   width: 195px;
   height: 39px;
   background:url("../img/spritesheet.png");
-  background-position: -621px -2px;
+   background-position: -621px -2px;
   margin-top: 40px;
   font-size: 0;
   vertical-align: top;
@@ -442,11 +451,13 @@ margin-top: 33px;
 }
 
 .footer-html-logo:hover{
-background-position: -820px -2px;
+  width: 195px;
+  height: 39px;
+  background-position: -820px -2px;
 }
 
 .footer-html-logo:active{
-    background-position: -1019px -2px;
+background-position: -1019px -2px;
 }
 
 .setting {
@@ -747,15 +758,16 @@ margin-top: 22px;
   background-position: -2px -2px;
   margin-right: 12px;
   text-decoration: none;
-  border-bottom: 0px;
 }
 
 .arrow-ascending:hover{
 background-position: -1218px -2px;
+text-decoration: none;
 }
 
 .arrow-ascending:active{
 background-position: -1248px -2px;
+text-decoration: none;
 }
 
 .arrow-descending{
@@ -767,18 +779,22 @@ background-position: -1248px -2px;
    background-position: -303px -2px;
    text-decoration: none;
    border-bottom: 0px;
+   text-decoration: none;
 }
 
 .arrow-descending:hover{
 background-position: -1233px -2px;
+text-decoration: none;
 }
 
 .arrow-descending:active{
 background-position: -1263px -2px;
+text-decoration: none;
 }
 
 .sorting-controls .down-active{
 background-position: -1263px -2px;
+text-decoration: none;
 }
 
 .option {
@@ -1060,6 +1076,7 @@ background-position: -128px -2px;
   text-align: center;
   margin-left: 7px;
 
+
 }
 
 .input-wrapper .search-form-minus{
@@ -1134,6 +1151,5 @@ margin-left: 16px;
 
     .search-content-show {
   display: block;
-}
 
-    
+}
