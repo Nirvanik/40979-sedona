@@ -84,7 +84,7 @@ nav a:active {
 .block1 {
     width: 1200px;
     height: 509px;
-    background: url(../img/background_photo.jpg) no-repeat;
+    background:#2c4550 url(../img/background_photo.jpg) no-repeat;
 }
 .block2 {
     border: 0px;
@@ -190,18 +190,44 @@ nav a:active {
 }
 .content-box {
     display: block;
-    padding-top: 144px;
+    padding-top: 68px;
     float: left;
     width: 400px;
 }
-.content-box h2::after {
-    content: "";
-    position: absolute;
-    top: 1090px;
-    left: 355px;
-    width: 870px;
-    height: 88px;
-    background: url(../img/sprite2.png) no-repeat;
+.content-house h2:before{
+  display: block;
+  position: relative;
+  top:-29px;
+  left:162px;
+  content: "";
+  width: 75px;
+  height: 76px;
+  background: url("../img/spritesheet_icons.png") no-repeat;
+  background-position: -80px -2px;
+}
+.content-food h2:before{
+  display: block;
+  position: relative;
+  top:-28px;
+  left:162px;
+  content: "";
+  width: 74px;
+     height: 76px;
+       background: url("../img/spritesheet_icons.png") no-repeat;
+     background-position: -2px -2px;
+
+}
+.content-suvenir h2:before{
+  display: block;
+    position: relative;
+  top:-31px;
+  left:166px;
+  content: "";
+  width: 64px;
+height: 76px;
+  background: url("../img/spritesheet_icons.png") no-repeat;
+background-position: -159px -2px;
+
 }
 .content h2 {
     display: block;
@@ -234,7 +260,7 @@ nav a:active {
     margin-bottom: -5px;
 }
 .features-second-img {
-  background-color: #f2f2f2;
+  background-color: #434828;
     display: block;
     float: left;
 }
@@ -356,6 +382,7 @@ nav a:active {
     float: left;
     width: 1200px;
 z-index: 0;
+background-color: #acc47d;
 }
 footer {
     display: block;
@@ -363,9 +390,10 @@ footer {
     width: 1200px;
     background: white;
     opacity: 0.9;
+
 }
 .main-footer{
-  margin-top: -125px;
+  margin-top: -120px;
   background: rgba(255, 255, 255, 0.9);
 
 }
@@ -481,7 +509,7 @@ background-position: -1019px -2px;
     height: 217px;
     float: left;
     display: block;
-    background:#f2f2f2 url(../img/hotels_background.jpg) no-repeat;
+    background:#2e3e6d url(../img/hotels_background.jpg) no-repeat;
 }
 .setting-infra{
   display: block;
@@ -728,6 +756,8 @@ margin-left: 88px;
     padding-left: 72px;
 
 }
+
+
 .sorting h3 {
     font-size: 21px;
     font-weight: bold;
@@ -740,7 +770,11 @@ margin-left: 88px;
 }
 .sorting ul {
     font-size: 0px;
-
+}
+.sorting .pushed {
+ display: inline;
+ color: #81b3d2;
+ border-bottom: 1px dotted #81b3d2;
 }
 .sorting li {
     display: inline-block;
@@ -761,6 +795,7 @@ margin-right: 33px;
 .sorting li:nth-child(3){
 margin-right: 33px;
 }
+
 .sorting .sorting-type {
     color: #d1d1d1;
     text-decoration: none;
@@ -781,9 +816,7 @@ margin-right: 33px;
     text-decoration: none;
     border-bottom: 0px;
 }
-.sorting .pushed {
-    color: #81b3d2;
-}
+
 
 .sorting-controls{
   display: block;
@@ -1008,12 +1041,11 @@ margin-right: 7px;
     display: none;
     width: 568px;
     background-color: white;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
     padding-top: 65px;
     padding-bottom: 7px;
-    position: absolute;
-    left: 32%;
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
@@ -1304,9 +1336,9 @@ background-position: -33px -2px;
     }
 
     @keyframes move {
-     0% {transform: translateY(0px); opacity: 0.2;}
-     50% {transform: translateY(100px);}
-     100% {transform: translateY(0px);}
+     0% {transform: translateY(0px) currentColor;translateX(-50%); opacity: 0.2;}
+     50% {transform: translateY(100px) translateX(-50%) ;}
+     100% {transform: translateY(0px)translateX(-50%) ;}
 }
 
     .search-content-show {
