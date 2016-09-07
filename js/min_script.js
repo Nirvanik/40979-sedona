@@ -1,0 +1,1 @@
+var link=document.querySelector(".search"),popup=document.querySelector(".search-content");link.addEventListener("click",function(a){a.preventDefault(),popup.classList.toggle("search-content-show")});
