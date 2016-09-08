@@ -28,65 +28,66 @@
             </a>
         </header>
         <section class="setting">
-            <div class="setting-infra">
-                <h2>Инфраструктура:</h2>
-                <form action="#" method="get" class="setting-infra-category">
-                    <ul>
-                        <li>
-                            <input type="checkbox" id="infrastr-1" name="pool" value="pool" checked>
-                            <label for="infrastr-1">Бассейн</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="infrastr-2" name="parking" value="parking" checked>
-                            <label for="infrastr-2">Парковка</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="infrastr-3" name="wi-fi" value="wi-fi" checked>
-                            <label for="infrastr-3">Wi-Fi</label>
-                        </li>
-                    </ul>
-                </form>
+            <form action="#" method="get" class="setting-category">
+                <div class="setting-infra">
+                    <h2>Инфраструктура:</h2>
 
-            </div>
-            <div class="setting-filter">
-                <h2>Тип жилья:</h2>
-                <form action="#" method="get" class="setting-filter-category">
-                    <ul>
-                        <li>
-                            <input type="checkbox" id="type-1" name="hotel" value="hotel" checked>
-                            <label for="type-1">Гостиница</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="type-2" name="motel" value="motel" checked>
-                            <label for="type-2">Мотель</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="type-3" name="apartments" value="apartments" checked>
-                            <label for="type-3">Апартаменты</label>
-                        </li>
-                    </ul>
-                </form>
-
-            </div>
-            <div class="filter-range">
-                <div class="filter-range-title">Стоимость в сутки (р):</div>
-                <div class="price-controls">
-                    <label class="min-price">от
-                        <input type="text" name="min-price" value="0">
-                    </label>
-                    <label class="max-price">до
-                        <input type="text" name="max-price" value="3000">
-                    </label>
-                </div>
-                <div class="range-controls">
-                    <div class="scale">
-                        <div class="bar"></div>
+                    <div class="setting-infra-category">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="infrastr-1" name="pool" value="pool" checked>
+                                <label for="infrastr-1">Бассейн</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="infrastr-2" name="parking" value="parking" checked>
+                                <label for="infrastr-2">Парковка</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="infrastr-3" name="wi-fi" value="wi-fi" checked>
+                                <label for="infrastr-3">Wi-Fi</label>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="range-toggle range-toggle-min"></div>
-                    <div class="range-toggle range-toggle-max"></div>
                 </div>
-                <button class="btn-transparent" type="submit">Показать</button>
-            </div>
+                <div class="setting-filter">
+                    <h2>Тип жилья:</h2>
+                    <div class="setting-filter-category">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="type-1" name="hotel" value="hotel" checked>
+                                <label for="type-1">Гостиница</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="type-2" name="motel" value="motel" checked>
+                                <label for="type-2">Мотель</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="type-3" name="apartments" value="apartments" checked>
+                                <label for="type-3">Апартаменты</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-range">
+                    <div class="filter-range-title">Стоимость в сутки (р):</div>
+                    <div class="price-controls">
+                        <label class="min-price">от
+                            <input type="text" name="min-price" value="0">
+                        </label>
+                        <label class="max-price">до
+                            <input type="text" name="max-price" value="3000">
+                        </label>
+                    </div>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                    <button class="btn-transparent" type="submit">Показать</button>
+                </div>
+            </form>
 
         </section>
         <section class="sorting">
@@ -94,7 +95,7 @@
             <ul>
                 <li class="sorting-value-name">СОРТИРОВКА:
                 </li>
-                <li><span class="pushed">ПО ЦЕНЕ</spa>
+                <li><span class="pushed">ПО ЦЕНЕ</span>
                 </li>
                 <li><a class="sorting-type" href="#">ПО ТИПУ</a>
                 </li>
@@ -182,5 +183,4 @@
         </footer>
     </div>
 </body>
-
 </html>
