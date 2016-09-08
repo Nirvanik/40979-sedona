@@ -554,6 +554,7 @@ input[type="checkbox"] + label {
 input[type="checkbox"] + label::before {
     content: "";
     display: inline-block;
+    vertical-align: center;
     height: 22px;
     width: 26px;
     margin: 0 15px -5px 0;
@@ -616,6 +617,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 .price-controls label {
     display: inline-block;
+    vertical-align: middle;
     font-size: 14px;
     line-height: 29px;
     cursor: pointer;
@@ -760,6 +762,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 .arrow-ascending {
     display: inline-block;
+    vertical-align: top;
     font-size: 0;
     width: 11px;
     height: 10px;
@@ -781,6 +784,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 .arrow-descending {
     display: inline-block;
+    vertical-align: top;
     font-size: 0;
     width: 11px;
     height: 10px;
@@ -871,6 +875,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 .info {
     display: inline-block;
+    vertical-align: top;
     float: left;
     padding-left: 17px;
     padding-right: 17px;
@@ -893,6 +898,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 .block {
     display: inline-block;
+    vertical-align: top;
     float: left;
     padding-left: 17px;
     padding-right: 17px;
@@ -919,6 +925,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 .option-rating .stars {
     display: inline-block;
+    vertical-align: top;
     float: right;
     width: 89px;
     height: 17px;
@@ -1203,22 +1210,46 @@ input[type="checkbox"]:checked:disabled + label::before {
     background-color: #5496bd;
     color: #88b6d1;
 }
-@keyframes move {
+@-webkit-keyframes move {
     0% {
+        -webkit-transform: translateY(0px) currentColor;
+        translateX(-50%);
         transform: translateY(0px) currentColor;
         translateX(-50%);
         opacity: 0.2;
     }
     50% {
+        -webkit-transform: translateY(100px) translateX(-50%);
         transform: translateY(100px) translateX(-50%);
     }
     100% {
+        -webkit-transform: translateY(0px)translateX(-50%);
+        transform: translateY(0px)translateX(-50%);
+    }
+}
+@keyframes move {
+    0% {
+        -webkit-transform: translateY(0px) currentColor;
+        translateX(-50%);
+        transform: translateY(0px) currentColor;
+        translateX(-50%);
+        opacity: 0.2;
+    }
+    50% {
+        -webkit-transform: translateY(100px) translateX(-50%);
+        transform: translateY(100px) translateX(-50%);
+    }
+    100% {
+        -webkit-transform: translateY(0px)translateX(-50%);
         transform: translateY(0px)translateX(-50%);
     }
 }
 .search-content-show {
     display: block;
+    -webkit-animation-name: move;
     animation-name: move;
+    -webkit-animation-duration: 1s;
     animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
 }
